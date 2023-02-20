@@ -70,7 +70,7 @@ Next, copy/paste the below commands to the terminal and press enter key
 
 ```
 
-Once the repository is cloned, a directory named **amazon-rekognition-code-samples** will appear in the File Browser on the left panel of SageMaker Studio IDE. 
+Once the repository is cloned, a directory named **amazon-rekognition-ppe/notebook/** will appear in the File Browser on the left panel of SageMaker Studio IDE. 
 Double-click on the directory will show you the sub-directories and files.
 
 You can now double-click on the Jupyter Notebooks inside the directory and start working on them.
