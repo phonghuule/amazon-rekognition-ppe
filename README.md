@@ -85,7 +85,7 @@ To start the detection of PPEs in an image, we will be using DetectProtectiveEqu
 ![worker-with-bb](docs/worker-with-bb.png)
 
 To run this lab, you need to have prerequisite section completed.
-1. Click on the 7-ppe-detection.ipynb notebook.
+1. Click on the **ppe-detection.ipynb** notebook.
 2. Follow the instruction in the notebook to understand how you can detect personal protective equipment in images.
 3. In order to execute each cell, click on the "Run" button at the top or press "Shift+Enter". 
 
@@ -159,24 +159,15 @@ When accessing the application for the first time, you need to use the Admin e-m
 To manage users, you can use the [Cognito Users Pool console](https://console.aws.amazon.com/cognito/users).
 
 ## **Clean Up**
-1. Navigate to **Amazon SageMaker** console and select **Domains**. After that select the domain named **RekSagemakerDomain** and select User profiles named **sagemakeruser** 
+1. Navigate to Amazon Elastic File System Console, select the EFS Volume created by Amazon SageMaker. 
 
-![delete-1](docs/delete-1.png)
+![efs](/docs/delete-efs.png)
 
-![delete-2](docs/delete-2.png)
+Please check the Tags of EFS Volume to make sure it was created and managed by SageMaker. There will be a Tag key named **ManagedByAmazonSageMakerResource**
 
-Delete all the **Apps**
+![efs-tag](/docs/efs-details.png)
 
-![delete-3](docs/delete-3.png)
-
-After the apps have been deleted, click on **Edit** on the _Details_ section within the **User Details** screen.
-
-![edit](docs/userdetailsedit.png)
-
-Then click on **Delete User** to delete the user ``sagemakeruser``. <br/>
-**Note:** If there are other users please delete these to be able to delete the SageMaker Domain.
-
-![delete](docs/deleteuserprofile.png)
+Select **Delete** to delete the EFS Volume
 
 2. Navigate to AWS CloudFormation Console, click on the **rekognition-immersion-day-sagemaker-notebook** stack and select **Delete**
 
